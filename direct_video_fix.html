@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Direct Video Fix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        video {
+            max-width: 100%;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            background-color: #000;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Loading Test</h1>
+        
+        <p>This is a direct HTML file that bypasses Flask templating to test video loading.</p>
+        
+        <video id="mainVideo" controls autoplay>
+            <source src="app/static/vedio/hack.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div>
+            <p>If the video above doesn't load, try these alternative sources:</p>
+            
+            <a href="app/static/vedio/hack.mp4" download class="button">Download Video File</a>
+        </div>
+        
+        <div id="log" style="margin-top: 20px; text-align: left; border: 1px solid #ddd; padding: 10px; background-color: #fff;"></div>
+    </div>
+    
+    <script>
+        const video = document.getElementById('mainVideo');
+        const log = document.getElementById('log');
+        
+        function logMessage(msg) {
+            const time = new Date().toLocaleTimeString();
+            log.innerHTML += `<p>[${time}] ${msg}</p>`;
+        }
+        
+        logMessage('Page loaded, checking video...');
+        
+        video.addEventListener('loadedmetadata', function() {
+            logMessage(`Video metadata loaded: ${video.duration.toFixed(2)} seconds, ${video.videoWidth}x${video.videoHeight}`);
+        });
+        
+        video.addEventListener('loadeddata', function() {
+            logMessage('Video data loaded successfully');
+        });
+        
+        video.addEventListener('play', function() {
+            logMessage('Video started playing');
+        });
+        
+        video.addEventListener('error', function(e) {
+            logMessage(`Video error: ${video.error ? video.error.message : 'Unknown error'}`);
+            // Try to load with absolute path
+            video.innerHTML = '<source src="/app/static/vedio/hack.mp4" type="video/mp4">';
+            video.load();
+        });
+    </script>
+</body>
+</html> 

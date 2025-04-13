@@ -1,0 +1,409 @@
+{
+  "score": -6,
+  "starsCollected": 6,
+  "obstacleAvoidances": 58,
+  "missedRewards": 9,
+  "gameTime": 60,
+  "averageRewardReactionTime": 1883.3333333333333,
+  "averageObstacleReactionTime": 1270.8,
+  "positiveEmojiInteractions": 1,
+  "negativeEmojiInteractions": 3,
+  "neutralEmojiInteractions": 4,
+  "distractionResponseDelta": 0,
+  "movementDirectionChanges": 22,
+  "hesitations": 1,
+  "movementVariability": 128.8999127230116,
+  "avgHesitationDuration": 1540.75,
+  "hesitationFrequency": null,
+  "directionChangeFrequency": null,
+  "avgResponseToPositive": 0.6697923643670463,
+  "avgResponseToNegative": 0.6669630947087595,
+  "emotionalResponseRatio": 1.004242018307658,
+  "reactionTimeDetail": [
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 1744379642301
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1244,
+      "timeSinceLastDistraction": 1744379642697
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1242,
+      "timeSinceLastDistraction": 1744379644759
+    },
+    {
+      "type": "reward_collected",
+      "time": 1918,
+      "timeSinceLastDistraction": 1744379644836
+    },
+    {
+      "type": "reward_collected",
+      "time": 1861,
+      "timeSinceLastDistraction": 1744379646169
+    },
+    {
+      "type": "emoji_angry",
+      "time": 1513,
+      "value": -2,
+      "timeSinceLastDistraction": 1744379646225,
+      "playerSpeed": 0.2932080200501253,
+      "playerPosition": 369.20001220703125
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 1744379646321
+    },
+    {
+      "type": "reward_collected",
+      "time": 1883,
+      "timeSinceLastDistraction": 1744379646649
+    },
+    {
+      "type": "reward_collected",
+      "time": 1901,
+      "timeSinceLastDistraction": 1744379646822
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1375,
+      "timeSinceLastDistraction": 1744379647926
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1250,
+      "timeSinceLastDistraction": 1744379648141
+    },
+    {
+      "type": "emoji_happy",
+      "time": 1493,
+      "value": 2,
+      "timeSinceLastDistraction": 1744379649273,
+      "playerSpeed": 0.06857142857142857,
+      "playerPosition": 217.20001220703125
+    },
+    {
+      "type": "emoji_neutral",
+      "time": 1542,
+      "value": 0,
+      "timeSinceLastDistraction": 1744379649419,
+      "playerSpeed": 1.848768472906404,
+      "playerPosition": 77.20001220703125
+    },
+    {
+      "type": "emoji_sad",
+      "time": 1493,
+      "value": -1,
+      "timeSinceLastDistraction": 1744379650793,
+      "playerSpeed": 0.8325827178286195,
+      "playerPosition": 61.20001220703125
+    },
+    {
+      "type": "reward_collected",
+      "time": 1876,
+      "timeSinceLastDistraction": 1744379651155
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1265,
+      "timeSinceLastDistraction": 1744379651170
+    },
+    {
+      "type": "reward_collected",
+      "time": 1861,
+      "timeSinceLastDistraction": 1744379651773
+    },
+    {
+      "type": "emoji_sad",
+      "time": 1492,
+      "value": -1,
+      "timeSinceLastDistraction": 1744379652772,
+      "playerSpeed": 0.03571428571428571,
+      "playerPosition": 206.20001220703125
+    },
+    {
+      "type": "emoji_neutral",
+      "time": 1492,
+      "value": 0,
+      "timeSinceLastDistraction": 1744379653536,
+      "playerSpeed": 0.4031449836712994,
+      "playerPosition": 242.20001220703125
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1361,
+      "timeSinceLastDistraction": 1744379653620
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 1744379655022
+    },
+    {
+      "type": "emoji_neutral",
+      "time": 1555,
+      "value": 0,
+      "timeSinceLastDistraction": 1846,
+      "playerSpeed": 1.478021978021978,
+      "playerPosition": 76.20001220703125
+    },
+    {
+      "type": "emoji_neutral",
+      "time": 1503,
+      "value": 0,
+      "timeSinceLastDistraction": 2516,
+      "playerSpeed": 0.27619047619047615,
+      "playerPosition": 51.20001220703125
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1242,
+      "timeSinceLastDistraction": 2985
+    }
+  ],
+  "distractionEvents": [
+    {
+      "type": "flash",
+      "time": 1744379656044,
+      "preSpeed": 0.26537861046057765,
+      "postSpeed": 0.26537861046057765,
+      "speedDelta": 0
+    },
+    {
+      "type": "flash",
+      "time": 1744379671083,
+      "preSpeed": 1.0731407169609417,
+      "postSpeed": 1.0731407169609417,
+      "speedDelta": 0
+    },
+    {
+      "type": "flash",
+      "time": 1744379686084,
+      "preSpeed": 1.0731407169609417,
+      "postSpeed": 1.0731407169609417,
+      "speedDelta": 0
+    }
+  ],
+  "emotionalStimulusResponses": [
+    {
+      "type": "angry",
+      "reactionTime": 1513,
+      "playerPosition": 369.20001220703125,
+      "directionChangesBeforeCollection": 5,
+      "speedAtCollection": 0.2932080200501253,
+      "hesitationsBeforeCollection": 0,
+      "timeSinceLastDistraction": 1744379646225
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1493,
+      "playerPosition": 217.20001220703125,
+      "directionChangesBeforeCollection": 10,
+      "speedAtCollection": 0.06857142857142857,
+      "hesitationsBeforeCollection": 0,
+      "timeSinceLastDistraction": 1744379649273
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1542,
+      "playerPosition": 77.20001220703125,
+      "directionChangesBeforeCollection": 10,
+      "speedAtCollection": 1.848768472906404,
+      "hesitationsBeforeCollection": 0,
+      "timeSinceLastDistraction": 1744379649419
+    },
+    {
+      "type": "sad",
+      "reactionTime": 1493,
+      "playerPosition": 61.20001220703125,
+      "directionChangesBeforeCollection": 14,
+      "speedAtCollection": 0.8325827178286195,
+      "hesitationsBeforeCollection": 0,
+      "timeSinceLastDistraction": 1744379650793
+    },
+    {
+      "type": "sad",
+      "reactionTime": 1492,
+      "playerPosition": 206.20001220703125,
+      "directionChangesBeforeCollection": 16,
+      "speedAtCollection": 0.03571428571428571,
+      "hesitationsBeforeCollection": 0,
+      "timeSinceLastDistraction": 1744379652772
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1492,
+      "playerPosition": 242.20001220703125,
+      "directionChangesBeforeCollection": 20,
+      "speedAtCollection": 0.4031449836712994,
+      "hesitationsBeforeCollection": 0,
+      "timeSinceLastDistraction": 1744379653536
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1555,
+      "playerPosition": 76.20001220703125,
+      "directionChangesBeforeCollection": 21,
+      "speedAtCollection": 1.478021978021978,
+      "hesitationsBeforeCollection": 1,
+      "timeSinceLastDistraction": 1846
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1503,
+      "playerPosition": 51.20001220703125,
+      "directionChangesBeforeCollection": 21,
+      "speedAtCollection": 0.27619047619047615,
+      "hesitationsBeforeCollection": 1,
+      "timeSinceLastDistraction": 2516
+    }
+  ],
+  "idlePeriods": [
+    {
+      "duration": 2182,
+      "startTime": 1744379641042,
+      "endTime": 1744379643224,
+      "timeSinceLastDistraction": 1744379641042
+    },
+    {
+      "duration": 676,
+      "startTime": 1744379653876,
+      "endTime": 1744379654552,
+      "timeSinceLastDistraction": 1744379653876
+    },
+    {
+      "duration": 2059,
+      "startTime": 1744379655546,
+      "endTime": 1744379657605,
+      "timeSinceLastDistraction": -498
+    },
+    {
+      "duration": 1246,
+      "startTime": 1744379657987,
+      "endTime": 1744379659233,
+      "timeSinceLastDistraction": 1943
+    }
+  ],
+  "playerPositions": [
+    {
+      "x": 81.20001220703125,
+      "time": 1744379657876,
+      "timeSinceDistraction": 1832
+    },
+    {
+      "x": 77.20001220703125,
+      "time": 1744379657883,
+      "timeSinceDistraction": 1839
+    },
+    {
+      "x": 76.20001220703125,
+      "time": 1744379657890,
+      "timeSinceDistraction": 1846
+    },
+    {
+      "x": 75.20001220703125,
+      "time": 1744379657904,
+      "timeSinceDistraction": 1860
+    },
+    {
+      "x": 74.20001220703125,
+      "time": 1744379657918,
+      "timeSinceDistraction": 1874
+    },
+    {
+      "x": 73.20001220703125,
+      "time": 1744379657925,
+      "timeSinceDistraction": 1881
+    },
+    {
+      "x": 71.20001220703125,
+      "time": 1744379657932,
+      "timeSinceDistraction": 1888
+    },
+    {
+      "x": 70.20001220703125,
+      "time": 1744379657939,
+      "timeSinceDistraction": 1895
+    },
+    {
+      "x": 69.20001220703125,
+      "time": 1744379657946,
+      "timeSinceDistraction": 1902
+    },
+    {
+      "x": 65.20001220703125,
+      "time": 1744379657960,
+      "timeSinceDistraction": 1916
+    },
+    {
+      "x": 63.20001220703125,
+      "time": 1744379657966,
+      "timeSinceDistraction": 1922
+    },
+    {
+      "x": 57.20001220703125,
+      "time": 1744379657973,
+      "timeSinceDistraction": 1929
+    },
+    {
+      "x": 51.20001220703125,
+      "time": 1744379657987,
+      "timeSinceDistraction": 1943
+    },
+    {
+      "x": 0.20001220703125,
+      "time": 1744379659233,
+      "timeSinceDistraction": 3189
+    },
+    {
+      "x": 4.20001220703125,
+      "time": 1744379659247,
+      "timeSinceDistraction": 3203
+    },
+    {
+      "x": 13.20001220703125,
+      "time": 1744379659254,
+      "timeSinceDistraction": 3210
+    },
+    {
+      "x": 22.20001220703125,
+      "time": 1744379659261,
+      "timeSinceDistraction": 3217
+    },
+    {
+      "x": 35.20001220703125,
+      "time": 1744379659275,
+      "timeSinceDistraction": 3231
+    },
+    {
+      "x": 49.20001220703125,
+      "time": 1744379659282,
+      "timeSinceDistraction": 3238
+    },
+    {
+      "x": 95.20001220703125,
+      "time": 1744379659296,
+      "timeSinceDistraction": 3252
+    }
+  ],
+  "timestamp": "2025-04-11 19:25:01",
+  "extracted_features": {
+    "score": -6,
+    "stars_collected": 6,
+    "obstacles_avoided": 58,
+    "missed_rewards": 9,
+    "avg_reward_reaction_time": 1883.3333333333333,
+    "avg_obstacle_reaction_time": 1270.8,
+    "positive_emoji_interactions": 1,
+    "negative_emoji_interactions": 3,
+    "neutral_emoji_interactions": 4,
+    "distraction_response_delta": 0,
+    "collection_efficiency": 0.4,
+    "distraction_recovery": 0.0,
+    "emotional_bias": -0.5
+  }
+}

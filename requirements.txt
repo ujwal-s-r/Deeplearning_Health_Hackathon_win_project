@@ -1,0 +1,28 @@
+# Depression Risk Assessment System - Dependencies
+
+# Core Libraries
+opencv-python>=4.6.0
+mediapipe>=0.9.0
+deepface>=0.0.79
+tensorflow>=2.10.0
+flask>=2.2.0
+
+# Data Processing
+numpy>=1.22.0
+pandas>=1.4.0
+scikit-learn>=1.0.2
+
+# Utilities
+matplotlib>=3.5.2
+pillow>=9.2.0
+
+# Web Framework Extras
+flask-wtf>=1.0.0
+werkzeug>=2.0.0
+jinja2>=3.0.0
+
+# AI and ML Extensions
+google-generativeai>=0.1.0  # For Google Gemini API integration
+
+# Data Storage and Session Management
+flask-session>=0.4.0 

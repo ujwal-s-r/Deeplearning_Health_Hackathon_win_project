@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}PHQ-8 Questionnaire{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h2 class="h5 mb-0">PHQ-8 Depression Screening</h2>
+                <span class="badge bg-light text-primary">Question {{ question_number }} of {{ total_questions }}</span>
+            </div>
+            
+            <div class="card-body p-4">
+                <div class="progress mb-4" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: {{ progress }}%;" 
+                         aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="mb-4">
+                    <p class="lead">Over the last 2 weeks, how often have you been bothered by:</p>
+                    <h3 class="h5 fw-bold">{{ question }}</h3>
+                </div>
+                
+                <form method="post" action="{{ url_for('main.phq8_questionnaire') }}">
+                    <div class="list-group mb-4">
+                        {% for key, value in choices.items() %}
+                        <label class="list-group-item d-flex gap-2 p-3">
+                            <input class="form-check-input flex-shrink-0" type="radio" name="answer" value="{{ key }}" required>
+                            <span>
+                                <strong>{{ value }}</strong>
+                            </span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" name="skip" value="true" class="btn btn-outline-secondary">
+                            Skip for Testing
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            Next Question
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="card-footer bg-light p-3">
+                <div class="alert alert-info mb-0">
+                    <small class="d-block mb-2"><strong>How to respond:</strong></small>
+                    <small class="d-block">
+                        Choose the option that best reflects how often you've experienced each 
+                        symptom over the past 2 weeks.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

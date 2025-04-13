@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block title %}Comprehensive Results{% endblock %}
+
+{% block extra_css %}
+<style>
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-dark text-white">
+                <h2 class="h5 mb-0">Your Comprehensive Mental Health Assessment</h2>
+            </div>
+            
+            <div class="card-body p-4">
+                <h3 class="h4 mb-3 text-center">Assessment Overview</h3>
+                
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-primary text-white">
+                                Phase 1: PHQ-8
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Depression Screening</h5>
+                                <p class="card-text">Score: <span class="badge bg-primary">{{ phq8_score }}</span></p>
+                                {% if phq8_score <= 4 %}
+                                    <p class="card-text">Severity: <strong>None/minimal</strong></p>
+                                {% elif phq8_score <= 9 %}
+                                    <p class="card-text">Severity: <strong>Mild</strong></p>
+                                {% elif phq8_score <= 14 %}
+                                    <p class="card-text">Severity: <strong>Moderate</strong></p>
+                                {% elif phq8_score <= 19 %}
+                                    <p class="card-text">Severity: <strong>Moderately severe</strong></p>
+                                {% else %}
+                                    <p class="card-text">Severity: <strong>Severe</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-success text-white">
+                                Phase 2: Game
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cognitive Assessment</h5>
+                                <p class="card-text">Score: <span class="badge bg-success">{{ game_data.score }}</span></p>
+                                {% if game_data.features %}
+                                    <p class="card-text">Reaction time: <strong>{{ "%.0f"|format(game_data.features.avg_reaction_time) }}ms</strong></p>
+                                    <p class="card-text">Accuracy: <strong>{{ "%.1f"|format(game_data.features.accuracy) }}%</strong></p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header bg-info text-white">
+                                Phase 3: Video
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Emotional Analysis</h5>
+                                <p class="card-text">Dominant: <span class="badge bg-info">{{ dominant_emotion_label }}</span></p>
+                                
+                                {% if emotion_counts %}
+                                <div class="small mt-2">
+                                    <div>Distribution:</div>
+                                    {% for emotion, count in emotion_counts.items() %}
+                                        {% if count > 0 %}
+                                            <div>{{ emotion }}: {{ count }}</div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                                
+                                <div class="mt-3">
+                                    <h6>Blink Analysis</h6>
+                                    <p>Total Blinks: <strong>{{ blink_count }}</strong></p>
+                                </div>
+                                
+                                <div class="mt-3">
+                                    <h6>Gaze Analysis</h6>
+                                    <p>Looking Left: <strong>{{ looking_left_count }}</strong> frames</p>
+                                    <p>Looking Right: <strong>{{ looking_right_count }}</strong> frames</p>
+                                    <p>Looking Center: <strong>{{ looking_center_count }}</strong> frames</p>
+                                    <p>Right/Left Ratio: <strong>{{ "%.2f"|format(ratio_gaze_on_roi) }}</strong></p>
+                                </div>
+                                
+                                <div class="mt-3">
+                                    <h6>Pupil Analysis</h6>
+                                    <p>Avg Size: <strong>{{ "%.2f"|format(avg_pupil_size) }}</strong> px</p>
+                                    <p>Size Range: <strong>{{ "%.2f"|format(min_pupil_size) }} - {{ "%.2f"|format(max_pupil_size) }}</strong> px</p>
+                                    <p>Dilation Delta: <strong>{{ "%.4f"|format(pupil_dilation_delta) }}</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-warning mb-4">
+                    <h4 class="h6">Important Disclaimer</h4>
+                    <p class="mb-0">This assessment is not a diagnostic tool and should not replace professional evaluation. The results are intended to provide insights into patterns that may warrant further attention.</p>
+                </div>
+                
+                <div class="d-grid gap-2 col-md-6 mx-auto">
+                    <button id="viewAiReportBtn" class="btn btn-success mb-2">View AI-Generated Report</button>
+                    <a href="{{ url_for('main.index') }}" class="btn btn-primary">Start New Assessment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Loading overlay for webhook request -->
+<div id="webhookLoadingOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 9999; justify-content: center; align-items: center; flex-direction: column; color: white;">
+    <div style="border: 8px solid #f3f3f3; border-top: 8px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin-bottom: 20px;"></div>
+    <p>Generating AI Report...</p>
+    <p class="small text-info mt-2">This may take a moment as we analyze your data</p>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Add console logging to track when the page loads -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("FLOW: Final results page loaded successfully");
+        console.log("FLOW: PHQ-8 score: {{ phq8_score }}");
+        console.log("FLOW: Game score: {{ game_data.score|default(0) }}");
+        console.log("FLOW: Dominant emotion: {{ dominant_emotion_label }}");
+        console.log("FLOW: Is depressed: {{ is_depressed }}");
+        console.log("FLOW: Depression confidence: {{ depression_confidence }}");
+        
+        // Handle the AI Report button click
+        document.getElementById('viewAiReportBtn').addEventListener('click', function() {
+            // Show loading overlay
+            document.getElementById('webhookLoadingOverlay').style.display = 'flex';
+            
+            // Collect data to send to webhook
+            const assessmentData = {
+                phq8_score: {{ phq8_score|tojson }},
+                dominant_emotion: "{{ dominant_emotion_label }}",
+                blink_count: {{ blink_count|tojson }},
+                emotion_counts: {{ emotion_counts|tojson }},
+                looking_left_count: {{ looking_left_count|tojson }},
+                looking_right_count: {{ looking_right_count|tojson }},
+                looking_center_count: {{ looking_center_count|tojson }},
+                ratio_gaze_on_roi: {{ ratio_gaze_on_roi|tojson }},
+                avg_pupil_size: {{ avg_pupil_size|tojson }},
+                pupil_dilation_delta: {{ pupil_dilation_delta|tojson }},
+                is_depressed: {{ 'true' if is_depressed else 'false' }},
+                depression_confidence: {{ depression_confidence|tojson }},
+                game_data: {{ game_data|tojson }}
+            };
+            
+            // Send data to webhook
+            fetch('https://maga82834.app.n8n.cloud/webhook/e5ba09a4-df6e-4e46-b218-acc42bfac5e7', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(assessmentData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok: ' + response.status);
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Store the response in session storage to retrieve in the AI report page
+                sessionStorage.setItem('aiReportContent', data);
+                
+                // Hide loading overlay
+                document.getElementById('webhookLoadingOverlay').style.display = 'none';
+                
+                // Navigate to the AI report page
+                window.location.href = "{{ url_for('main.ai_report') }}";
+            })
+            .catch(error => {
+                console.error('Error sending data to webhook:', error);
+                
+                // Hide loading overlay
+                document.getElementById('webhookLoadingOverlay').style.display = 'none';
+                
+                // Still navigate to the AI report page, but we'll show an error there
+                sessionStorage.setItem('aiReportError', error.message);
+                window.location.href = "{{ url_for('main.ai_report') }}";
+            });
+        });
+    });
+</script>
+{% endblock %} 

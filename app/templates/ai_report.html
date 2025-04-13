@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}AI Mental Health Report{% endblock %}
+
+{% block extra_css %}
+<style>
+    .ai-report-content {
+        white-space: pre-line;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .ai-report-markdown h1, 
+    .ai-report-markdown h2, 
+    .ai-report-markdown h3, 
+    .ai-report-markdown h4, 
+    .ai-report-markdown h5 {
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        font-weight: 600;
+    }
+    .ai-report-markdown p {
+        margin-bottom: 1rem;
+    }
+    .ai-report-markdown ul, 
+    .ai-report-markdown ol {
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+    .ai-report-markdown li {
+        margin-bottom: 0.5rem;
+    }
+    .ai-report-markdown blockquote {
+        border-left: 4px solid #ccc;
+        padding-left: 1rem;
+        font-style: italic;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .spinner-border {
+        width: 4rem;
+        height: 4rem;
+    }
+    #fullPageLoader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    #reportContent {
+        display: none;
+    }
+    #reportErrorContainer {
+        display: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Loading screen that will display by default -->
+<div id="fullPageLoader">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <h3 class="mt-4">Generating Your AI Report</h3>
+    <p class="text-muted">Please wait while we process your assessment data...</p>
+</div>
+
+<!-- Content container that will be shown once webhook responds -->
+<div id="reportContent" class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <!-- Markdown content will be rendered here -->
+            <div id="markdownContent" class="ai-report-markdown">
+                <!-- Content from webhook will be inserted here -->
+            </div>
+            
+            <div class="mt-5 text-center">
+                <a href="{{ url_for('main.final_result') }}" class="btn btn-outline-secondary">Back to Assessment Results</a>
+                <a href="{{ url_for('main.index') }}" class="btn btn-primary ms-2">Start New Assessment</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Error message that will be shown if webhook fails -->
+<div id="reportErrorContainer" class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="alert alert-danger">
+                <h4 class="alert-heading">Error Generating Report</h4>
+                <p id="reportErrorMessage">We encountered an error while generating your report.</p>
+                <hr>
+                <p class="mb-0">Please try again or return to your assessment results.</p>
+            </div>
+            <div class="text-center mt-4">
+                <a href="{{ url_for('main.final_result') }}" class="btn btn-outline-secondary">Back to Assessment Results</a>
+                <a href="{{ url_for('main.index') }}" class="btn btn-primary ms-2">Start New Assessment</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("AI Report page loaded");
+        
+        // Get content elements
+        const fullPageLoader = document.getElementById('fullPageLoader');
+        const reportContent = document.getElementById('reportContent');
+        const markdownContent = document.getElementById('markdownContent');
+        const errorContainer = document.getElementById('reportErrorContainer');
+        const errorMessage = document.getElementById('reportErrorMessage');
+        
+        // Check if we have an error from the webhook call
+        const webhookError = sessionStorage.getItem('aiReportError');
+        if (webhookError) {
+            // Display error
+            errorMessage.textContent = webhookError;
+            fullPageLoader.style.display = 'none';
+            errorContainer.style.display = 'block';
+            
+            // Clear the error from session storage
+            sessionStorage.removeItem('aiReportError');
+            return;
+        }
+        
+        // Get content from session storage (set by the final_result page)
+        const aiReportContent = sessionStorage.getItem('aiReportContent');
+        
+        if (aiReportContent) {
+            // Parse and render markdown content
+            try {
+                // Set up marked.js options for security and rendering
+                marked.setOptions({
+                    gfm: true,
+                    breaks: true,
+                    sanitize: false,
+                    smartLists: true,
+                    smartypants: true
+                });
+                
+                // Convert markdown to HTML and display content
+                markdownContent.innerHTML = marked.parse(aiReportContent);
+                
+                // Hide loader and show content
+                fullPageLoader.style.display = 'none';
+                reportContent.style.display = 'block';
+                
+                // Clear from session storage
+                sessionStorage.removeItem('aiReportContent');
+            } catch (err) {
+                console.error("Error parsing markdown:", err);
+                
+                // If markdown parsing fails, just display raw text
+                markdownContent.textContent = aiReportContent;
+                
+                // Hide loader and show content
+                fullPageLoader.style.display = 'none';
+                reportContent.style.display = 'block';
+            }
+        } else {
+            // No content from webhook, show error
+            errorMessage.textContent = "No report data received. Please try again.";
+            fullPageLoader.style.display = 'none';
+            errorContainer.style.display = 'block';
+        }
+    });
+</script>
+{% endblock %} 

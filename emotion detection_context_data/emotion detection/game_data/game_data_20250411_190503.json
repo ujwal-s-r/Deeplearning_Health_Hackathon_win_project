@@ -1,0 +1,265 @@
+{
+  "score": -8,
+  "starsCollected": 14,
+  "obstacleAvoidances": 104,
+  "missedRewards": 32,
+  "averageRewardReactionTime": 1889.142857142857,
+  "averageObstacleReactionTime": 1245.3,
+  "positiveEmojiInteractions": 1,
+  "negativeEmojiInteractions": 3,
+  "neutralEmojiInteractions": 3,
+  "distractionResponseDelta": 0,
+  "reactionTimeDetail": [
+    {
+      "type": "emoji_sad",
+      "time": 1498,
+      "value": -1,
+      "timeSinceLastDistraction": 1744378444419
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 1744378445579
+    },
+    {
+      "type": "reward_collected",
+      "time": 2001,
+      "timeSinceLastDistraction": 1744378445607
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1279,
+      "timeSinceLastDistraction": 1744378445871
+    },
+    {
+      "type": "emoji_happy",
+      "time": 1493,
+      "value": 2,
+      "timeSinceLastDistraction": 1744378447106
+    },
+    {
+      "type": "reward_collected",
+      "time": 1859,
+      "timeSinceLastDistraction": 1744378449648
+    },
+    {
+      "type": "reward_collected",
+      "time": 1875,
+      "timeSinceLastDistraction": 1744378450641
+    },
+    {
+      "type": "reward_collected",
+      "time": 1881,
+      "timeSinceLastDistraction": 1744378451064
+    },
+    {
+      "type": "emoji_sad",
+      "time": 1598,
+      "value": -1,
+      "timeSinceLastDistraction": 1744378451190
+    },
+    {
+      "type": "reward_collected",
+      "time": 1866,
+      "timeSinceLastDistraction": 1744378452085
+    },
+    {
+      "type": "emoji_angry",
+      "time": 1492,
+      "value": -2,
+      "timeSinceLastDistraction": 1744378454203
+    },
+    {
+      "type": "reward_collected",
+      "time": 1869,
+      "timeSinceLastDistraction": 1744378455210
+    },
+    {
+      "type": "emoji_neutral",
+      "time": 1528,
+      "value": 0,
+      "timeSinceLastDistraction": 1744378455426
+    },
+    {
+      "type": "emoji_neutral",
+      "time": 1493,
+      "value": 0,
+      "timeSinceLastDistraction": 1744378456808
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1247,
+      "timeSinceLastDistraction": 1744378457616
+    },
+    {
+      "type": "reward_collected",
+      "time": 1942,
+      "timeSinceLastDistraction": 527
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1240,
+      "timeSinceLastDistraction": 1579
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1241,
+      "timeSinceLastDistraction": 1815
+    },
+    {
+      "type": "reward_collected",
+      "time": 1866,
+      "timeSinceLastDistraction": 2128
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 2704
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 3218
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1244,
+      "timeSinceLastDistraction": 3726
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1250,
+      "timeSinceLastDistraction": 3843
+    },
+    {
+      "type": "reward_collected",
+      "time": 1882,
+      "timeSinceLastDistraction": 4260
+    },
+    {
+      "type": "reward_collected",
+      "time": 1882,
+      "timeSinceLastDistraction": 4468
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 4495
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 5461
+    },
+    {
+      "type": "reward_collected",
+      "time": 1860,
+      "timeSinceLastDistraction": 5530
+    },
+    {
+      "type": "reward_collected",
+      "time": 1861,
+      "timeSinceLastDistraction": 7759
+    },
+    {
+      "type": "reward_collected",
+      "time": 1874,
+      "timeSinceLastDistraction": 9044
+    },
+    {
+      "type": "emoji_neutral",
+      "time": 1494,
+      "value": 0,
+      "timeSinceLastDistraction": 11489
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1245,
+      "timeSinceLastDistraction": 12934
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1244,
+      "timeSinceLastDistraction": 13170
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 14231
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1244,
+      "timeSinceLastDistraction": 1876
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1244,
+      "timeSinceLastDistraction": 2585
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 2779
+    },
+    {
+      "type": "reward_collected",
+      "time": 1930,
+      "timeSinceLastDistraction": 3334
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 6921
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1243,
+      "timeSinceLastDistraction": 7545
+    },
+    {
+      "type": "obstacle_hit",
+      "time": 1241,
+      "timeSinceLastDistraction": 8446
+    }
+  ],
+  "distractionEvents": [
+    {
+      "type": "flash",
+      "time": 1744378457631,
+      "preSpeed": 0.512912087912088,
+      "postSpeed": 0.512912087912088,
+      "speedDelta": 0
+    },
+    {
+      "type": "flash",
+      "time": 1744378472632,
+      "preSpeed": 0.6110337745321771,
+      "postSpeed": 0.6110337745321771,
+      "speedDelta": 0
+    },
+    {
+      "type": "flash",
+      "time": 1744378488084,
+      "preSpeed": 0.6110337745321771,
+      "postSpeed": 0.6110337745321771,
+      "speedDelta": 0
+    }
+  ],
+  "timestamp": "2025-04-11 19:05:03",
+  "extracted_features": {
+    "score": -8,
+    "stars_collected": 14,
+    "obstacles_avoided": 104,
+    "missed_rewards": 32,
+    "avg_reward_reaction_time": 1889.142857142857,
+    "avg_obstacle_reaction_time": 1245.3,
+    "positive_emoji_interactions": 1,
+    "negative_emoji_interactions": 3,
+    "neutral_emoji_interactions": 3,
+    "distraction_response_delta": 0,
+    "collection_efficiency": 0.30434782608695654,
+    "distraction_recovery": 0.0,
+    "emotional_bias": -0.5
+  }
+}

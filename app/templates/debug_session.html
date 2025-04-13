@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Session Debug{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h2>Session Debug Information</h2>
+                </div>
+                <div class="card-body">
+                    <h3>Application Flow Status</h3>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <div class="card {{ 'bg-success text-white' if session_summary.phq8_completed else 'bg-danger text-white' }}">
+                                <div class="card-header">
+                                    <h4>PHQ-8 Status</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>Completed: {{ 'Yes' if session_summary.phq8_completed else 'No' }}</p>
+                                    {% if session_summary.phq8_completed %}
+                                        <p>Score: {{ session_summary.current_state.phq8_score }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card {{ 'bg-success text-white' if session_summary.game_completed else 'bg-danger text-white' }}">
+                                <div class="card-header">
+                                    <h4>Game Status</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>Completed: {{ 'Yes' if session_summary.game_completed else 'No' }}</p>
+                                    {% if session_summary.game_completed %}
+                                        <p>Score: {{ session_summary.current_state.game_score }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card {{ 'bg-success text-white' if session_summary.video_completed else 'bg-danger text-white' }}">
+                                <div class="card-header">
+                                    <h4>Video Analysis Status</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>Completed: {{ 'Yes' if session_summary.video_completed else 'No' }}</p>
+                                    {% if session_summary.video_completed %}
+                                        <p>Emotion: {{ session_summary.current_state.dominant_emotion_label }}</p>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Session Keys</h3>
+                    <ul class="list-group mb-4">
+                        {% for key in session_keys %}
+                            <li class="list-group-item">{{ key }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <div class="d-grid gap-2">
+                        <a href="{{ url_for('main.index') }}" class="btn btn-primary">Back to Home</a>
+                        <a href="{{ url_for('main.final_result') }}" class="btn btn-success">Go to Results Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

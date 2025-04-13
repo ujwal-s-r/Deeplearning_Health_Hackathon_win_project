@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            max-width: 640px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Loading Test</h1>
+    
+    <div class="video-container">
+        <h2>Direct path:</h2>
+        <video controls preload="auto">
+            <source src="/static/vedio/hack.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="video-container">
+        <h2>Relative path:</h2>
+        <video controls preload="auto">
+            <source src="vedio/hack.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="video-container">
+        <h2>Absolute path to root:</h2>
+        <video controls preload="auto">
+            <source src="/hack.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div id="log"></div>
+    
+    <script>
+        // Log info about the video files
+        document.querySelectorAll('video').forEach((video, index) => {
+            video.addEventListener('loadedmetadata', function() {
+                const log = document.getElementById('log');
+                log.innerHTML += `<p>Video ${index+1} loaded successfully: ${video.duration.toFixed(2)} seconds</p>`;
+            });
+            
+            video.addEventListener('error', function(e) {
+                const log = document.getElementById('log');
+                log.innerHTML += `<p>Video ${index+1} error: ${e}</p>`;
+            });
+        });
+    </script>
+</body>
+</html> 

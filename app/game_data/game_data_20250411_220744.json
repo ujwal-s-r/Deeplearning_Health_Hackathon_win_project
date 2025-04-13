@@ -1,0 +1,644 @@
+{
+  "score": 20,
+  "starsCollected": 24,
+  "totalObjects": 0,
+  "successfulActions": 0,
+  "blocksHit": 4,
+  "blocksDodged": 146,
+  "positiveEmojisCollected": 0,
+  "negativeEmojisCollected": 0,
+  "movementDirectionChanges": 33,
+  "hesitations": 2,
+  "emotionalStimulusResponses": [],
+  "playerPositions": [
+    {
+      "x": 218.199951171875,
+      "time": 1744389463330,
+      "timeSinceDistraction": 13709
+    },
+    {
+      "x": 216.199951171875,
+      "time": 1744389463337,
+      "timeSinceDistraction": 13716
+    },
+    {
+      "x": 213.199951171875,
+      "time": 1744389463345,
+      "timeSinceDistraction": 13724
+    },
+    {
+      "x": 208.199951171875,
+      "time": 1744389463350,
+      "timeSinceDistraction": 13729
+    },
+    {
+      "x": 202.199951171875,
+      "time": 1744389463357,
+      "timeSinceDistraction": 13736
+    },
+    {
+      "x": 200.199951171875,
+      "time": 1744389463364,
+      "timeSinceDistraction": 13743
+    },
+    {
+      "x": 196.199951171875,
+      "time": 1744389463371,
+      "timeSinceDistraction": 13750
+    },
+    {
+      "x": 191.199951171875,
+      "time": 1744389463378,
+      "timeSinceDistraction": 13757
+    },
+    {
+      "x": 188.199951171875,
+      "time": 1744389463385,
+      "timeSinceDistraction": 13764
+    },
+    {
+      "x": 185.199951171875,
+      "time": 1744389463392,
+      "timeSinceDistraction": 13771
+    },
+    {
+      "x": 184.199951171875,
+      "time": 1744389463399,
+      "timeSinceDistraction": 13778
+    },
+    {
+      "x": 183.199951171875,
+      "time": 1744389463406,
+      "timeSinceDistraction": 13785
+    },
+    {
+      "x": 182.199951171875,
+      "time": 1744389463413,
+      "timeSinceDistraction": 13792
+    },
+    {
+      "x": 181.199951171875,
+      "time": 1744389463434,
+      "timeSinceDistraction": 13813
+    },
+    {
+      "x": 181.199951171875,
+      "time": 1744389463469,
+      "timeSinceDistraction": 13848
+    },
+    {
+      "x": 181.199951171875,
+      "time": 1744389463531,
+      "timeSinceDistraction": 13910
+    },
+    {
+      "x": 183.199951171875,
+      "time": 1744389463559,
+      "timeSinceDistraction": 13938
+    },
+    {
+      "x": 184.199951171875,
+      "time": 1744389463573,
+      "timeSinceDistraction": 13952
+    },
+    {
+      "x": 184.199951171875,
+      "time": 1744389463580,
+      "timeSinceDistraction": 13959
+    },
+    {
+      "x": 185.199951171875,
+      "time": 1744389463587,
+      "timeSinceDistraction": 13966
+    },
+    {
+      "x": 186.199951171875,
+      "time": 1744389463594,
+      "timeSinceDistraction": 13973
+    },
+    {
+      "x": 187.199951171875,
+      "time": 1744389463600,
+      "timeSinceDistraction": 13979
+    },
+    {
+      "x": 189.199951171875,
+      "time": 1744389463607,
+      "timeSinceDistraction": 13986
+    },
+    {
+      "x": 190.199951171875,
+      "time": 1744389463614,
+      "timeSinceDistraction": 13993
+    },
+    {
+      "x": 193.199951171875,
+      "time": 1744389463622,
+      "timeSinceDistraction": 14001
+    },
+    {
+      "x": 195.199951171875,
+      "time": 1744389463628,
+      "timeSinceDistraction": 14007
+    },
+    {
+      "x": 196.199951171875,
+      "time": 1744389463635,
+      "timeSinceDistraction": 14014
+    },
+    {
+      "x": 198.199951171875,
+      "time": 1744389463642,
+      "timeSinceDistraction": 14021
+    },
+    {
+      "x": 199.199951171875,
+      "time": 1744389463649,
+      "timeSinceDistraction": 14028
+    },
+    {
+      "x": 200.199951171875,
+      "time": 1744389463656,
+      "timeSinceDistraction": 14035
+    },
+    {
+      "x": 201.199951171875,
+      "time": 1744389463663,
+      "timeSinceDistraction": 14042
+    },
+    {
+      "x": 202.199951171875,
+      "time": 1744389463677,
+      "timeSinceDistraction": 14056
+    },
+    {
+      "x": 203.199951171875,
+      "time": 1744389463718,
+      "timeSinceDistraction": 14097
+    },
+    {
+      "x": 204.199951171875,
+      "time": 1744389463739,
+      "timeSinceDistraction": 14118
+    },
+    {
+      "x": 205.199951171875,
+      "time": 1744389463767,
+      "timeSinceDistraction": 14146
+    },
+    {
+      "x": 207.199951171875,
+      "time": 1744389463788,
+      "timeSinceDistraction": 14167
+    },
+    {
+      "x": 209.199951171875,
+      "time": 1744389463837,
+      "timeSinceDistraction": 14216
+    },
+    {
+      "x": 211.199951171875,
+      "time": 1744389463850,
+      "timeSinceDistraction": 14229
+    },
+    {
+      "x": 212.199951171875,
+      "time": 1744389463871,
+      "timeSinceDistraction": 14250
+    },
+    {
+      "x": 213.199951171875,
+      "time": 1744389463885,
+      "timeSinceDistraction": 14264
+    },
+    {
+      "x": 214.199951171875,
+      "time": 1744389463927,
+      "timeSinceDistraction": 14306
+    },
+    {
+      "x": 215.199951171875,
+      "time": 1744389463955,
+      "timeSinceDistraction": 14334
+    },
+    {
+      "x": 216.199951171875,
+      "time": 1744389463975,
+      "timeSinceDistraction": 14354
+    },
+    {
+      "x": 217.199951171875,
+      "time": 1744389464010,
+      "timeSinceDistraction": 14389
+    },
+    {
+      "x": 218.199951171875,
+      "time": 1744389464017,
+      "timeSinceDistraction": 14396
+    },
+    {
+      "x": 219.199951171875,
+      "time": 1744389464031,
+      "timeSinceDistraction": 14410
+    },
+    {
+      "x": 219.199951171875,
+      "time": 1744389464038,
+      "timeSinceDistraction": 14417
+    },
+    {
+      "x": 220.199951171875,
+      "time": 1744389464045,
+      "timeSinceDistraction": 14424
+    },
+    {
+      "x": 221.199951171875,
+      "time": 1744389464066,
+      "timeSinceDistraction": 14445
+    },
+    {
+      "x": 222.199951171875,
+      "time": 1744389464135,
+      "timeSinceDistraction": 14514
+    },
+    {
+      "x": 220.199951171875,
+      "time": 1744389464163,
+      "timeSinceDistraction": 14542
+    },
+    {
+      "x": 218.199951171875,
+      "time": 1744389464170,
+      "timeSinceDistraction": 14549
+    },
+    {
+      "x": 216.199951171875,
+      "time": 1744389464177,
+      "timeSinceDistraction": 14556
+    },
+    {
+      "x": 214.199951171875,
+      "time": 1744389464184,
+      "timeSinceDistraction": 14563
+    },
+    {
+      "x": 209.199951171875,
+      "time": 1744389464191,
+      "timeSinceDistraction": 14570
+    },
+    {
+      "x": 204.199951171875,
+      "time": 1744389464198,
+      "timeSinceDistraction": 14577
+    },
+    {
+      "x": 197.199951171875,
+      "time": 1744389464205,
+      "timeSinceDistraction": 14584
+    },
+    {
+      "x": 187.199951171875,
+      "time": 1744389464212,
+      "timeSinceDistraction": 14591
+    },
+    {
+      "x": 180.199951171875,
+      "time": 1744389464218,
+      "timeSinceDistraction": 14597
+    },
+    {
+      "x": 172.199951171875,
+      "time": 1744389464225,
+      "timeSinceDistraction": 14604
+    },
+    {
+      "x": 164.199951171875,
+      "time": 1744389464232,
+      "timeSinceDistraction": 14611
+    },
+    {
+      "x": 156.199951171875,
+      "time": 1744389464239,
+      "timeSinceDistraction": 14618
+    },
+    {
+      "x": 149.199951171875,
+      "time": 1744389464247,
+      "timeSinceDistraction": 14626
+    },
+    {
+      "x": 144.199951171875,
+      "time": 1744389464253,
+      "timeSinceDistraction": 14632
+    },
+    {
+      "x": 140.199951171875,
+      "time": 1744389464260,
+      "timeSinceDistraction": 14639
+    },
+    {
+      "x": 135.199951171875,
+      "time": 1744389464267,
+      "timeSinceDistraction": 14646
+    },
+    {
+      "x": 133.199951171875,
+      "time": 1744389464274,
+      "timeSinceDistraction": 14653
+    },
+    {
+      "x": 129.199951171875,
+      "time": 1744389464281,
+      "timeSinceDistraction": 14660
+    },
+    {
+      "x": 127.199951171875,
+      "time": 1744389464288,
+      "timeSinceDistraction": 14667
+    },
+    {
+      "x": 126.199951171875,
+      "time": 1744389464295,
+      "timeSinceDistraction": 14674
+    },
+    {
+      "x": 124.199951171875,
+      "time": 1744389464302,
+      "timeSinceDistraction": 14681
+    },
+    {
+      "x": 122.199951171875,
+      "time": 1744389464309,
+      "timeSinceDistraction": 14688
+    },
+    {
+      "x": 122.199951171875,
+      "time": 1744389464316,
+      "timeSinceDistraction": 14695
+    },
+    {
+      "x": 121.199951171875,
+      "time": 1744389464323,
+      "timeSinceDistraction": 14702
+    },
+    {
+      "x": 119.199951171875,
+      "time": 1744389464330,
+      "timeSinceDistraction": 14709
+    },
+    {
+      "x": 118.199951171875,
+      "time": 1744389464337,
+      "timeSinceDistraction": 14716
+    },
+    {
+      "x": 116.199951171875,
+      "time": 1744389464350,
+      "timeSinceDistraction": 14729
+    },
+    {
+      "x": 115.199951171875,
+      "time": 1744389464364,
+      "timeSinceDistraction": 14743
+    },
+    {
+      "x": 113.199951171875,
+      "time": 1744389464378,
+      "timeSinceDistraction": 14757
+    },
+    {
+      "x": 112.199951171875,
+      "time": 1744389464392,
+      "timeSinceDistraction": 14771
+    },
+    {
+      "x": 111.199951171875,
+      "time": 1744389464420,
+      "timeSinceDistraction": 14799
+    },
+    {
+      "x": 110.199951171875,
+      "time": 1744389464434,
+      "timeSinceDistraction": 14813
+    },
+    {
+      "x": 109.199951171875,
+      "time": 1744389464441,
+      "timeSinceDistraction": 14820
+    },
+    {
+      "x": 108.199951171875,
+      "time": 1744389464448,
+      "timeSinceDistraction": 14827
+    },
+    {
+      "x": 107.199951171875,
+      "time": 1744389464462,
+      "timeSinceDistraction": 14841
+    },
+    {
+      "x": 106.199951171875,
+      "time": 1744389464476,
+      "timeSinceDistraction": 14855
+    },
+    {
+      "x": 105.199951171875,
+      "time": 1744389464482,
+      "timeSinceDistraction": 14861
+    },
+    {
+      "x": 104.199951171875,
+      "time": 1744389464490,
+      "timeSinceDistraction": 14869
+    },
+    {
+      "x": 104.199951171875,
+      "time": 1744389464503,
+      "timeSinceDistraction": 14882
+    },
+    {
+      "x": 103.199951171875,
+      "time": 1744389464510,
+      "timeSinceDistraction": 14889
+    },
+    {
+      "x": 102.199951171875,
+      "time": 1744389464517,
+      "timeSinceDistraction": 14896
+    },
+    {
+      "x": 101.199951171875,
+      "time": 1744389464524,
+      "timeSinceDistraction": 14903
+    },
+    {
+      "x": 100.199951171875,
+      "time": 1744389464531,
+      "timeSinceDistraction": 14910
+    },
+    {
+      "x": 99.199951171875,
+      "time": 1744389464538,
+      "timeSinceDistraction": 14917
+    },
+    {
+      "x": 97.199951171875,
+      "time": 1744389464545,
+      "timeSinceDistraction": 14924
+    },
+    {
+      "x": 95.199951171875,
+      "time": 1744389464552,
+      "timeSinceDistraction": 14931
+    },
+    {
+      "x": 95.199951171875,
+      "time": 1744389464559,
+      "timeSinceDistraction": 14938
+    },
+    {
+      "x": 94.199951171875,
+      "time": 1744389464566,
+      "timeSinceDistraction": 14945
+    },
+    {
+      "x": 93.199951171875,
+      "time": 1744389464573,
+      "timeSinceDistraction": 14952
+    },
+    {
+      "x": 92.199951171875,
+      "time": 1744389464601,
+      "timeSinceDistraction": 14980
+    }
+  ],
+  "idlePeriods": [
+    {
+      "duration": 4617,
+      "startTime": 1744389401489,
+      "endTime": 1744389406106,
+      "timeSinceLastDistraction": 1744389401489
+    },
+    {
+      "duration": 854,
+      "startTime": 1744389412967,
+      "endTime": 1744389413821,
+      "timeSinceLastDistraction": 1744389412967
+    },
+    {
+      "duration": 889,
+      "startTime": 1744389415863,
+      "endTime": 1744389416752,
+      "timeSinceLastDistraction": 1744389415863
+    },
+    {
+      "duration": 2389,
+      "startTime": 1744389421988,
+      "endTime": 1744389424377,
+      "timeSinceLastDistraction": 2367
+    },
+    {
+      "duration": 549,
+      "startTime": 1744389426231,
+      "endTime": 1744389426780,
+      "timeSinceLastDistraction": 6610
+    },
+    {
+      "duration": 986,
+      "startTime": 1744389427016,
+      "endTime": 1744389428002,
+      "timeSinceLastDistraction": 7395
+    },
+    {
+      "duration": 1091,
+      "startTime": 1744389430127,
+      "endTime": 1744389431218,
+      "timeSinceLastDistraction": 10506
+    },
+    {
+      "duration": 1320,
+      "startTime": 1744389431384,
+      "endTime": 1744389432704,
+      "timeSinceLastDistraction": 11763
+    },
+    {
+      "duration": 826,
+      "startTime": 1744389436440,
+      "endTime": 1744389437266,
+      "timeSinceLastDistraction": 1820
+    },
+    {
+      "duration": 951,
+      "startTime": 1744389441489,
+      "endTime": 1744389442440,
+      "timeSinceLastDistraction": 6869
+    },
+    {
+      "duration": 570,
+      "startTime": 1744389444537,
+      "endTime": 1744389445107,
+      "timeSinceLastDistraction": 9917
+    },
+    {
+      "duration": 981,
+      "startTime": 1744389447426,
+      "endTime": 1744389448407,
+      "timeSinceLastDistraction": 12806
+    },
+    {
+      "duration": 694,
+      "startTime": 1744389449225,
+      "endTime": 1744389449919,
+      "timeSinceLastDistraction": -396
+    },
+    {
+      "duration": 806,
+      "startTime": 1744389452218,
+      "endTime": 1744389453024,
+      "timeSinceLastDistraction": 2597
+    },
+    {
+      "duration": 640,
+      "startTime": 1744389457593,
+      "endTime": 1744389458233,
+      "timeSinceLastDistraction": 7972
+    },
+    {
+      "duration": 764,
+      "startTime": 1744389460239,
+      "endTime": 1744389461003,
+      "timeSinceLastDistraction": 10618
+    }
+  ],
+  "distractionEvents": [
+    1744389419621,
+    1744389434620,
+    1744389449621
+  ],
+  "reactionTimes": [],
+  "timestamp": "2025-04-11 22:07:44",
+  "phq8_score": 12,
+  "extracted_features": {
+    "score": 20,
+    "stars_collected": 24,
+    "blocks_hit": 4,
+    "blocks_dodged": 146,
+    "positive_emojis": 0,
+    "negative_emojis": 0,
+    "movement_changes": 33,
+    "hesitations": 2,
+    "avg_reaction_time": 0,
+    "distraction_recovery": 1,
+    "emotional_bias": 0
+  },
+  "emotional_indicators": [
+    {
+      "emotion": "Emotional Stability",
+      "confidence": 0.9501103752759382,
+      "indicators": [
+        "Consistent performance",
+        "Balanced responses"
+      ]
+    }
+  ]
+}

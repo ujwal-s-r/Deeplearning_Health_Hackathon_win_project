@@ -1,0 +1,751 @@
+{
+  "score": 18,
+  "starsCollected": 24,
+  "obstacleAvoidances": 156,
+  "missedRewards": 33,
+  "totalObjects": 261,
+  "successfulActions": 196,
+  "blocksHit": 2,
+  "blocksDodged": 156,
+  "positiveEmojiInteractions": 4,
+  "negativeEmojiInteractions": 7,
+  "neutralEmojiInteractions": 5,
+  "movementDirectionChanges": 63,
+  "hesitations": 0,
+  "distractionResponseDelta": 0.09047619047619046,
+  "movementVariability": 32.67471652516667,
+  "emotionalResponseRatio": -0.2727272727272727,
+  "reactionTimes": [
+    1840,
+    1480,
+    1472,
+    1903,
+    1851,
+    1472,
+    1472,
+    1840,
+    1472,
+    1840,
+    1514,
+    1882,
+    1841,
+    1896,
+    1486,
+    1840,
+    1882,
+    1472,
+    1841,
+    1840,
+    1848,
+    1861,
+    1841,
+    1840,
+    1841,
+    1472,
+    1500,
+    1201,
+    1209,
+    1841,
+    1473,
+    1841,
+    1473,
+    1472,
+    1472,
+    1917,
+    1848,
+    1515,
+    1841,
+    1848,
+    1840,
+    1473
+  ],
+  "avgResponseToPositive": 1483,
+  "avgResponseToNegative": 1479.2857142857142,
+  "preDistractionSpeed": 0.23809523809523805,
+  "postDistractionSpeed": 0.3285714285714285,
+  "emotionalStimulusResponses": [
+    {
+      "type": "angry",
+      "reactionTime": 1480,
+      "timeSinceLastDistraction": 1744389966952
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 1744389970639
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 1744389972000
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 1744389973028
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 1744389976431
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1514,
+      "timeSinceLastDistraction": 3027
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1486,
+      "timeSinceLastDistraction": 5596
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 7805
+    },
+    {
+      "type": "sad",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 11506
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1500,
+      "timeSinceLastDistraction": 4487
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1473,
+      "timeSinceLastDistraction": 2049
+    },
+    {
+      "type": "sad",
+      "reactionTime": 1473,
+      "timeSinceLastDistraction": 3667
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 3993
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 6632
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1515,
+      "timeSinceLastDistraction": 8001
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1473,
+      "timeSinceLastDistraction": 13063
+    }
+  ],
+  "playerPositions": [
+    {
+      "x": 80.199951171875,
+      "time": 1744390019939,
+      "timeSinceDistraction": 13035
+    },
+    {
+      "x": 79.199951171875,
+      "time": 1744390019960,
+      "timeSinceDistraction": 13056
+    },
+    {
+      "x": 78.199951171875,
+      "time": 1744390019967,
+      "timeSinceDistraction": 13063
+    },
+    {
+      "x": 77.199951171875,
+      "time": 1744390020001,
+      "timeSinceDistraction": 13097
+    },
+    {
+      "x": 76.199951171875,
+      "time": 1744390020008,
+      "timeSinceDistraction": 13104
+    },
+    {
+      "x": 75.199951171875,
+      "time": 1744390020015,
+      "timeSinceDistraction": 13111
+    },
+    {
+      "x": 74.199951171875,
+      "time": 1744390020085,
+      "timeSinceDistraction": 13181
+    },
+    {
+      "x": 73.199951171875,
+      "time": 1744390020113,
+      "timeSinceDistraction": 13209
+    },
+    {
+      "x": 72.199951171875,
+      "time": 1744390020163,
+      "timeSinceDistraction": 13259
+    },
+    {
+      "x": 71.199951171875,
+      "time": 1744390020203,
+      "timeSinceDistraction": 13299
+    },
+    {
+      "x": 70.199951171875,
+      "time": 1744390020251,
+      "timeSinceDistraction": 13347
+    },
+    {
+      "x": 71.199951171875,
+      "time": 1744390020342,
+      "timeSinceDistraction": 13438
+    },
+    {
+      "x": 72.199951171875,
+      "time": 1744390020362,
+      "timeSinceDistraction": 13458
+    },
+    {
+      "x": 73.199951171875,
+      "time": 1744390020369,
+      "timeSinceDistraction": 13465
+    },
+    {
+      "x": 74.199951171875,
+      "time": 1744390020376,
+      "timeSinceDistraction": 13472
+    },
+    {
+      "x": 75.199951171875,
+      "time": 1744390020383,
+      "timeSinceDistraction": 13479
+    },
+    {
+      "x": 77.199951171875,
+      "time": 1744390020390,
+      "timeSinceDistraction": 13486
+    },
+    {
+      "x": 80.199951171875,
+      "time": 1744390020397,
+      "timeSinceDistraction": 13493
+    },
+    {
+      "x": 81.199951171875,
+      "time": 1744390020404,
+      "timeSinceDistraction": 13500
+    },
+    {
+      "x": 85.199951171875,
+      "time": 1744390020411,
+      "timeSinceDistraction": 13507
+    },
+    {
+      "x": 88.199951171875,
+      "time": 1744390020418,
+      "timeSinceDistraction": 13514
+    },
+    {
+      "x": 92.199951171875,
+      "time": 1744390020425,
+      "timeSinceDistraction": 13521
+    },
+    {
+      "x": 94.199951171875,
+      "time": 1744390020432,
+      "timeSinceDistraction": 13528
+    },
+    {
+      "x": 100.199951171875,
+      "time": 1744390020439,
+      "timeSinceDistraction": 13535
+    },
+    {
+      "x": 103.199951171875,
+      "time": 1744390020446,
+      "timeSinceDistraction": 13542
+    },
+    {
+      "x": 107.199951171875,
+      "time": 1744390020453,
+      "timeSinceDistraction": 13549
+    },
+    {
+      "x": 110.199951171875,
+      "time": 1744390020460,
+      "timeSinceDistraction": 13556
+    },
+    {
+      "x": 112.199951171875,
+      "time": 1744390020467,
+      "timeSinceDistraction": 13563
+    },
+    {
+      "x": 115.199951171875,
+      "time": 1744390020474,
+      "timeSinceDistraction": 13570
+    },
+    {
+      "x": 116.199951171875,
+      "time": 1744390020480,
+      "timeSinceDistraction": 13576
+    },
+    {
+      "x": 118.199951171875,
+      "time": 1744390020487,
+      "timeSinceDistraction": 13583
+    },
+    {
+      "x": 120.199951171875,
+      "time": 1744390020494,
+      "timeSinceDistraction": 13590
+    },
+    {
+      "x": 122.199951171875,
+      "time": 1744390020508,
+      "timeSinceDistraction": 13604
+    },
+    {
+      "x": 123.199951171875,
+      "time": 1744390020515,
+      "timeSinceDistraction": 13611
+    },
+    {
+      "x": 124.199951171875,
+      "time": 1744390020529,
+      "timeSinceDistraction": 13625
+    },
+    {
+      "x": 125.199951171875,
+      "time": 1744390020536,
+      "timeSinceDistraction": 13632
+    },
+    {
+      "x": 126.199951171875,
+      "time": 1744390020543,
+      "timeSinceDistraction": 13639
+    },
+    {
+      "x": 128.199951171875,
+      "time": 1744390020571,
+      "timeSinceDistraction": 13667
+    },
+    {
+      "x": 128.199951171875,
+      "time": 1744390020578,
+      "timeSinceDistraction": 13674
+    },
+    {
+      "x": 128.199951171875,
+      "time": 1744390020585,
+      "timeSinceDistraction": 13681
+    },
+    {
+      "x": 129.199951171875,
+      "time": 1744390020605,
+      "timeSinceDistraction": 13701
+    },
+    {
+      "x": 131.199951171875,
+      "time": 1744390020613,
+      "timeSinceDistraction": 13709
+    },
+    {
+      "x": 132.199951171875,
+      "time": 1744390020626,
+      "timeSinceDistraction": 13722
+    },
+    {
+      "x": 132.199951171875,
+      "time": 1744390020633,
+      "timeSinceDistraction": 13729
+    },
+    {
+      "x": 134.199951171875,
+      "time": 1744390020640,
+      "timeSinceDistraction": 13736
+    },
+    {
+      "x": 135.199951171875,
+      "time": 1744390020647,
+      "timeSinceDistraction": 13743
+    },
+    {
+      "x": 136.199951171875,
+      "time": 1744390020654,
+      "timeSinceDistraction": 13750
+    },
+    {
+      "x": 139.199951171875,
+      "time": 1744390020661,
+      "timeSinceDistraction": 13757
+    },
+    {
+      "x": 141.199951171875,
+      "time": 1744390020668,
+      "timeSinceDistraction": 13764
+    },
+    {
+      "x": 143.199951171875,
+      "time": 1744390020675,
+      "timeSinceDistraction": 13771
+    },
+    {
+      "x": 147.199951171875,
+      "time": 1744390020682,
+      "timeSinceDistraction": 13778
+    },
+    {
+      "x": 150.199951171875,
+      "time": 1744390020689,
+      "timeSinceDistraction": 13785
+    },
+    {
+      "x": 154.199951171875,
+      "time": 1744390020696,
+      "timeSinceDistraction": 13792
+    },
+    {
+      "x": 158.199951171875,
+      "time": 1744390020703,
+      "timeSinceDistraction": 13799
+    },
+    {
+      "x": 161.199951171875,
+      "time": 1744390020710,
+      "timeSinceDistraction": 13806
+    },
+    {
+      "x": 164.199951171875,
+      "time": 1744390020717,
+      "timeSinceDistraction": 13813
+    },
+    {
+      "x": 168.199951171875,
+      "time": 1744390020724,
+      "timeSinceDistraction": 13820
+    },
+    {
+      "x": 171.199951171875,
+      "time": 1744390020731,
+      "timeSinceDistraction": 13827
+    },
+    {
+      "x": 174.199951171875,
+      "time": 1744390020737,
+      "timeSinceDistraction": 13833
+    },
+    {
+      "x": 176.199951171875,
+      "time": 1744390020744,
+      "timeSinceDistraction": 13840
+    },
+    {
+      "x": 177.199951171875,
+      "time": 1744390020751,
+      "timeSinceDistraction": 13847
+    },
+    {
+      "x": 179.199951171875,
+      "time": 1744390020758,
+      "timeSinceDistraction": 13854
+    },
+    {
+      "x": 180.199951171875,
+      "time": 1744390020765,
+      "timeSinceDistraction": 13861
+    },
+    {
+      "x": 181.199951171875,
+      "time": 1744390020779,
+      "timeSinceDistraction": 13875
+    },
+    {
+      "x": 182.199951171875,
+      "time": 1744390020807,
+      "timeSinceDistraction": 13903
+    },
+    {
+      "x": 181.199951171875,
+      "time": 1744390020953,
+      "timeSinceDistraction": 14049
+    },
+    {
+      "x": 179.199951171875,
+      "time": 1744390020967,
+      "timeSinceDistraction": 14063
+    },
+    {
+      "x": 176.199951171875,
+      "time": 1744390020974,
+      "timeSinceDistraction": 14070
+    },
+    {
+      "x": 174.199951171875,
+      "time": 1744390020980,
+      "timeSinceDistraction": 14076
+    },
+    {
+      "x": 171.199951171875,
+      "time": 1744390020987,
+      "timeSinceDistraction": 14083
+    },
+    {
+      "x": 167.199951171875,
+      "time": 1744390020994,
+      "timeSinceDistraction": 14090
+    },
+    {
+      "x": 163.199951171875,
+      "time": 1744390021001,
+      "timeSinceDistraction": 14097
+    },
+    {
+      "x": 157.199951171875,
+      "time": 1744390021008,
+      "timeSinceDistraction": 14104
+    },
+    {
+      "x": 151.199951171875,
+      "time": 1744390021015,
+      "timeSinceDistraction": 14111
+    },
+    {
+      "x": 147.199951171875,
+      "time": 1744390021022,
+      "timeSinceDistraction": 14118
+    },
+    {
+      "x": 143.199951171875,
+      "time": 1744390021029,
+      "timeSinceDistraction": 14125
+    },
+    {
+      "x": 139.199951171875,
+      "time": 1744390021036,
+      "timeSinceDistraction": 14132
+    },
+    {
+      "x": 135.199951171875,
+      "time": 1744390021043,
+      "timeSinceDistraction": 14139
+    },
+    {
+      "x": 134.199951171875,
+      "time": 1744390021050,
+      "timeSinceDistraction": 14146
+    },
+    {
+      "x": 132.199951171875,
+      "time": 1744390021057,
+      "timeSinceDistraction": 14153
+    },
+    {
+      "x": 131.199951171875,
+      "time": 1744390021064,
+      "timeSinceDistraction": 14160
+    },
+    {
+      "x": 129.199951171875,
+      "time": 1744390021071,
+      "timeSinceDistraction": 14167
+    },
+    {
+      "x": 128.199951171875,
+      "time": 1744390021078,
+      "timeSinceDistraction": 14174
+    },
+    {
+      "x": 127.199951171875,
+      "time": 1744390021092,
+      "timeSinceDistraction": 14188
+    },
+    {
+      "x": 126.199951171875,
+      "time": 1744390021113,
+      "timeSinceDistraction": 14209
+    },
+    {
+      "x": 124.199951171875,
+      "time": 1744390021585,
+      "timeSinceDistraction": 14681
+    },
+    {
+      "x": 121.199951171875,
+      "time": 1744390021592,
+      "timeSinceDistraction": 14688
+    },
+    {
+      "x": 119.199951171875,
+      "time": 1744390021599,
+      "timeSinceDistraction": 14695
+    },
+    {
+      "x": 117.199951171875,
+      "time": 1744390021606,
+      "timeSinceDistraction": 14702
+    },
+    {
+      "x": 115.199951171875,
+      "time": 1744390021613,
+      "timeSinceDistraction": 14709
+    },
+    {
+      "x": 112.199951171875,
+      "time": 1744390021626,
+      "timeSinceDistraction": 14722
+    },
+    {
+      "x": 111.199951171875,
+      "time": 1744390021633,
+      "timeSinceDistraction": 14729
+    },
+    {
+      "x": 111.199951171875,
+      "time": 1744390021640,
+      "timeSinceDistraction": 14736
+    },
+    {
+      "x": 110.199951171875,
+      "time": 1744390021668,
+      "timeSinceDistraction": 14764
+    },
+    {
+      "x": 110.199951171875,
+      "time": 1744390021800,
+      "timeSinceDistraction": 14896
+    },
+    {
+      "x": 111.199951171875,
+      "time": 1744390021807,
+      "timeSinceDistraction": 14903
+    },
+    {
+      "x": 112.199951171875,
+      "time": 1744390021821,
+      "timeSinceDistraction": 14917
+    },
+    {
+      "x": 113.199951171875,
+      "time": 1744390021835,
+      "timeSinceDistraction": 14931
+    },
+    {
+      "x": 115.199951171875,
+      "time": 1744390021849,
+      "timeSinceDistraction": 14945
+    },
+    {
+      "x": 116.199951171875,
+      "time": 1744390021869,
+      "timeSinceDistraction": 14965
+    }
+  ],
+  "idlePeriods": [
+    {
+      "duration": 3382,
+      "startTime": 1744389959826,
+      "endTime": 1744389963208,
+      "timeSinceLastDistraction": 1744389959826
+    },
+    {
+      "duration": 875,
+      "startTime": 1744389965465,
+      "endTime": 1744389966340,
+      "timeSinceLastDistraction": 1744389965465
+    },
+    {
+      "duration": 694,
+      "startTime": 1744389970403,
+      "endTime": 1744389971097,
+      "timeSinceLastDistraction": 1744389970403
+    },
+    {
+      "duration": 875,
+      "startTime": 1744389980743,
+      "endTime": 1744389981618,
+      "timeSinceLastDistraction": 3839
+    },
+    {
+      "duration": 583,
+      "startTime": 1744389987286,
+      "endTime": 1744389987869,
+      "timeSinceLastDistraction": 10382
+    },
+    {
+      "duration": 535,
+      "startTime": 1744389988132,
+      "endTime": 1744389988667,
+      "timeSinceLastDistraction": 11228
+    },
+    {
+      "duration": 618,
+      "startTime": 1744390011418,
+      "endTime": 1744390012036,
+      "timeSinceLastDistraction": 4514
+    },
+    {
+      "duration": 514,
+      "startTime": 1744390021071,
+      "endTime": 1744390021585,
+      "timeSinceLastDistraction": 14167
+    }
+  ],
+  "distractionEvents": [
+    1744389976904,
+    1744389991903,
+    1744390006904
+  ],
+  "timestamp": "2025-04-11 22:17:02",
+  "phq8_score": 16,
+  "extracted_features": {
+    "score": 18,
+    "stars_collected": 24,
+    "blocks_hit": 2,
+    "blocks_dodged": 156,
+    "positive_emojis": 4,
+    "negative_emojis": 7,
+    "neutral_emojis": 5,
+    "movement_changes": 63,
+    "hesitations": 0,
+    "avg_reaction_time": 1681.0238095238096,
+    "distraction_recovery": 1,
+    "emotional_bias": -0.2727272727272727,
+    "emotional_response_ratio": -0.2727272727272727,
+    "movement_variability": 32.67471652516667,
+    "avg_response_to_positive": 1483,
+    "avg_response_to_negative": 1479.2857142857142
+  },
+  "emotional_indicators": [
+    {
+      "emotion": "Anxiety",
+      "confidence": 0.41742086162176195,
+      "indicators": [
+        "Frequent direction changes",
+        "High hesitation count"
+      ]
+    },
+    {
+      "emotion": "Depression",
+      "confidence": 0.3891960214951212,
+      "indicators": [
+        "Low engagement",
+        "Negative emoji preference"
+      ]
+    },
+    {
+      "emotion": "Emotional Stability",
+      "confidence": 0.8040276179516687,
+      "indicators": [
+        "Consistent performance",
+        "Balanced responses"
+      ]
+    }
+  ]
+}

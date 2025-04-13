@@ -1,0 +1,813 @@
+{
+  "score": 8,
+  "starsCollected": 17,
+  "obstacleAvoidances": 169,
+  "missedRewards": 28,
+  "totalObjects": 262,
+  "successfulActions": 203,
+  "blocksHit": 4,
+  "blocksDodged": 169,
+  "positiveEmojiInteractions": 5,
+  "negativeEmojiInteractions": 9,
+  "neutralEmojiInteractions": 3,
+  "movementDirectionChanges": 49,
+  "hesitations": 3,
+  "distractionResponseDelta": -0.7345238095238095,
+  "movementVariability": 54.896815936810036,
+  "emotionalResponseRatio": -0.2857142857142857,
+  "reactionTimes": [
+    1473,
+    1472,
+    1479,
+    1855,
+    1854,
+    1840,
+    1840,
+    1472,
+    1472,
+    1840,
+    1841,
+    1903,
+    1848,
+    1486,
+    1840,
+    1334,
+    1229,
+    1292,
+    1472,
+    1507,
+    1473,
+    1840,
+    1861,
+    1840,
+    1841,
+    1847,
+    1840,
+    1472,
+    1472,
+    1486,
+    1472,
+    1486,
+    1522,
+    1201,
+    1840,
+    1847,
+    1472,
+    1473
+  ],
+  "avgResponseToPositive": 1475,
+  "avgResponseToNegative": 1480.888888888889,
+  "preDistractionSpeed": 1.0714285714285714,
+  "postDistractionSpeed": 0.33690476190476193,
+  "emotionalStimulusResponses": [
+    {
+      "type": "sad",
+      "reactionTime": 1473,
+      "timeSinceLastDistraction": 1744390860010
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 1744390860530
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1479,
+      "timeSinceLastDistraction": 1744390861586
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 1744390869079
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 1744390870558
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1486,
+      "timeSinceLastDistraction": 1847
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 8965
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1507,
+      "timeSinceLastDistraction": 9556
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1473,
+      "timeSinceLastDistraction": 13063
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 6867
+    },
+    {
+      "type": "neutral",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 9819
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1486,
+      "timeSinceLastDistraction": 9965
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 11159
+    },
+    {
+      "type": "sad",
+      "reactionTime": 1486,
+      "timeSinceLastDistraction": 11513
+    },
+    {
+      "type": "sad",
+      "reactionTime": 1522,
+      "timeSinceLastDistraction": 14771
+    },
+    {
+      "type": "angry",
+      "reactionTime": 1472,
+      "timeSinceLastDistraction": 7923
+    },
+    {
+      "type": "happy",
+      "reactionTime": 1473,
+      "timeSinceLastDistraction": 8521
+    }
+  ],
+  "playerPositions": [
+    {
+      "x": 284.199951171875,
+      "time": 1744390916240,
+      "timeSinceDistraction": 13243
+    },
+    {
+      "x": 282.199951171875,
+      "time": 1744390916247,
+      "timeSinceDistraction": 13250
+    },
+    {
+      "x": 281.199951171875,
+      "time": 1744390916261,
+      "timeSinceDistraction": 13264
+    },
+    {
+      "x": 279.199951171875,
+      "time": 1744390916268,
+      "timeSinceDistraction": 13271
+    },
+    {
+      "x": 278.199951171875,
+      "time": 1744390916275,
+      "timeSinceDistraction": 13278
+    },
+    {
+      "x": 276.199951171875,
+      "time": 1744390916282,
+      "timeSinceDistraction": 13285
+    },
+    {
+      "x": 272.199951171875,
+      "time": 1744390916289,
+      "timeSinceDistraction": 13292
+    },
+    {
+      "x": 270.199951171875,
+      "time": 1744390916296,
+      "timeSinceDistraction": 13299
+    },
+    {
+      "x": 267.199951171875,
+      "time": 1744390916302,
+      "timeSinceDistraction": 13305
+    },
+    {
+      "x": 264.199951171875,
+      "time": 1744390916309,
+      "timeSinceDistraction": 13312
+    },
+    {
+      "x": 261.199951171875,
+      "time": 1744390916316,
+      "timeSinceDistraction": 13319
+    },
+    {
+      "x": 259.199951171875,
+      "time": 1744390916323,
+      "timeSinceDistraction": 13326
+    },
+    {
+      "x": 256.199951171875,
+      "time": 1744390916330,
+      "timeSinceDistraction": 13333
+    },
+    {
+      "x": 255.199951171875,
+      "time": 1744390916337,
+      "timeSinceDistraction": 13340
+    },
+    {
+      "x": 253.199951171875,
+      "time": 1744390916344,
+      "timeSinceDistraction": 13347
+    },
+    {
+      "x": 252.199951171875,
+      "time": 1744390916351,
+      "timeSinceDistraction": 13354
+    },
+    {
+      "x": 251.199951171875,
+      "time": 1744390916358,
+      "timeSinceDistraction": 13361
+    },
+    {
+      "x": 250.199951171875,
+      "time": 1744390916372,
+      "timeSinceDistraction": 13375
+    },
+    {
+      "x": 249.199951171875,
+      "time": 1744390916414,
+      "timeSinceDistraction": 13417
+    },
+    {
+      "x": 249.199951171875,
+      "time": 1744390916560,
+      "timeSinceDistraction": 13563
+    },
+    {
+      "x": 250.199951171875,
+      "time": 1744390916615,
+      "timeSinceDistraction": 13618
+    },
+    {
+      "x": 249.199951171875,
+      "time": 1744390916782,
+      "timeSinceDistraction": 13785
+    },
+    {
+      "x": 248.199951171875,
+      "time": 1744390916802,
+      "timeSinceDistraction": 13805
+    },
+    {
+      "x": 246.199951171875,
+      "time": 1744390916810,
+      "timeSinceDistraction": 13813
+    },
+    {
+      "x": 246.199951171875,
+      "time": 1744390916816,
+      "timeSinceDistraction": 13819
+    },
+    {
+      "x": 244.199951171875,
+      "time": 1744390916823,
+      "timeSinceDistraction": 13826
+    },
+    {
+      "x": 240.199951171875,
+      "time": 1744390916830,
+      "timeSinceDistraction": 13833
+    },
+    {
+      "x": 239.199951171875,
+      "time": 1744390916837,
+      "timeSinceDistraction": 13840
+    },
+    {
+      "x": 236.199951171875,
+      "time": 1744390916844,
+      "timeSinceDistraction": 13847
+    },
+    {
+      "x": 231.199951171875,
+      "time": 1744390916851,
+      "timeSinceDistraction": 13854
+    },
+    {
+      "x": 227.199951171875,
+      "time": 1744390916858,
+      "timeSinceDistraction": 13861
+    },
+    {
+      "x": 222.199951171875,
+      "time": 1744390916865,
+      "timeSinceDistraction": 13868
+    },
+    {
+      "x": 216.199951171875,
+      "time": 1744390916872,
+      "timeSinceDistraction": 13875
+    },
+    {
+      "x": 213.199951171875,
+      "time": 1744390916879,
+      "timeSinceDistraction": 13882
+    },
+    {
+      "x": 208.199951171875,
+      "time": 1744390916886,
+      "timeSinceDistraction": 13889
+    },
+    {
+      "x": 203.199951171875,
+      "time": 1744390916893,
+      "timeSinceDistraction": 13896
+    },
+    {
+      "x": 200.199951171875,
+      "time": 1744390916900,
+      "timeSinceDistraction": 13903
+    },
+    {
+      "x": 196.199951171875,
+      "time": 1744390916907,
+      "timeSinceDistraction": 13910
+    },
+    {
+      "x": 191.199951171875,
+      "time": 1744390916914,
+      "timeSinceDistraction": 13917
+    },
+    {
+      "x": 189.199951171875,
+      "time": 1744390916921,
+      "timeSinceDistraction": 13924
+    },
+    {
+      "x": 185.199951171875,
+      "time": 1744390916928,
+      "timeSinceDistraction": 13931
+    },
+    {
+      "x": 181.199951171875,
+      "time": 1744390916934,
+      "timeSinceDistraction": 13937
+    },
+    {
+      "x": 179.199951171875,
+      "time": 1744390916941,
+      "timeSinceDistraction": 13944
+    },
+    {
+      "x": 175.199951171875,
+      "time": 1744390916948,
+      "timeSinceDistraction": 13951
+    },
+    {
+      "x": 173.199951171875,
+      "time": 1744390916955,
+      "timeSinceDistraction": 13958
+    },
+    {
+      "x": 170.199951171875,
+      "time": 1744390916962,
+      "timeSinceDistraction": 13965
+    },
+    {
+      "x": 169.199951171875,
+      "time": 1744390916969,
+      "timeSinceDistraction": 13972
+    },
+    {
+      "x": 168.199951171875,
+      "time": 1744390916976,
+      "timeSinceDistraction": 13979
+    },
+    {
+      "x": 167.199951171875,
+      "time": 1744390916983,
+      "timeSinceDistraction": 13986
+    },
+    {
+      "x": 166.199951171875,
+      "time": 1744390916997,
+      "timeSinceDistraction": 14000
+    },
+    {
+      "x": 165.199951171875,
+      "time": 1744390917011,
+      "timeSinceDistraction": 14014
+    },
+    {
+      "x": 164.199951171875,
+      "time": 1744390917059,
+      "timeSinceDistraction": 14062
+    },
+    {
+      "x": 161.199951171875,
+      "time": 1744390917080,
+      "timeSinceDistraction": 14083
+    },
+    {
+      "x": 160.199951171875,
+      "time": 1744390917101,
+      "timeSinceDistraction": 14104
+    },
+    {
+      "x": 159.199951171875,
+      "time": 1744390917108,
+      "timeSinceDistraction": 14111
+    },
+    {
+      "x": 157.199951171875,
+      "time": 1744390917122,
+      "timeSinceDistraction": 14125
+    },
+    {
+      "x": 156.199951171875,
+      "time": 1744390917129,
+      "timeSinceDistraction": 14132
+    },
+    {
+      "x": 154.199951171875,
+      "time": 1744390917143,
+      "timeSinceDistraction": 14146
+    },
+    {
+      "x": 153.199951171875,
+      "time": 1744390917150,
+      "timeSinceDistraction": 14153
+    },
+    {
+      "x": 152.199951171875,
+      "time": 1744390917157,
+      "timeSinceDistraction": 14160
+    },
+    {
+      "x": 151.199951171875,
+      "time": 1744390917164,
+      "timeSinceDistraction": 14167
+    },
+    {
+      "x": 150.199951171875,
+      "time": 1744390917171,
+      "timeSinceDistraction": 14174
+    },
+    {
+      "x": 149.199951171875,
+      "time": 1744390917191,
+      "timeSinceDistraction": 14194
+    },
+    {
+      "x": 148.199951171875,
+      "time": 1744390917198,
+      "timeSinceDistraction": 14201
+    },
+    {
+      "x": 147.199951171875,
+      "time": 1744390917233,
+      "timeSinceDistraction": 14236
+    },
+    {
+      "x": 145.199951171875,
+      "time": 1744390917240,
+      "timeSinceDistraction": 14243
+    },
+    {
+      "x": 144.199951171875,
+      "time": 1744390917254,
+      "timeSinceDistraction": 14257
+    },
+    {
+      "x": 143.199951171875,
+      "time": 1744390917261,
+      "timeSinceDistraction": 14264
+    },
+    {
+      "x": 142.199951171875,
+      "time": 1744390917268,
+      "timeSinceDistraction": 14271
+    },
+    {
+      "x": 141.199951171875,
+      "time": 1744390917282,
+      "timeSinceDistraction": 14285
+    },
+    {
+      "x": 139.199951171875,
+      "time": 1744390917289,
+      "timeSinceDistraction": 14292
+    },
+    {
+      "x": 138.199951171875,
+      "time": 1744390917296,
+      "timeSinceDistraction": 14299
+    },
+    {
+      "x": 137.199951171875,
+      "time": 1744390917302,
+      "timeSinceDistraction": 14305
+    },
+    {
+      "x": 135.199951171875,
+      "time": 1744390917309,
+      "timeSinceDistraction": 14312
+    },
+    {
+      "x": 133.199951171875,
+      "time": 1744390917323,
+      "timeSinceDistraction": 14326
+    },
+    {
+      "x": 132.199951171875,
+      "time": 1744390917330,
+      "timeSinceDistraction": 14333
+    },
+    {
+      "x": 131.199951171875,
+      "time": 1744390917337,
+      "timeSinceDistraction": 14340
+    },
+    {
+      "x": 129.199951171875,
+      "time": 1744390917344,
+      "timeSinceDistraction": 14347
+    },
+    {
+      "x": 128.199951171875,
+      "time": 1744390917351,
+      "timeSinceDistraction": 14354
+    },
+    {
+      "x": 126.199951171875,
+      "time": 1744390917358,
+      "timeSinceDistraction": 14361
+    },
+    {
+      "x": 125.199951171875,
+      "time": 1744390917365,
+      "timeSinceDistraction": 14368
+    },
+    {
+      "x": 124.199951171875,
+      "time": 1744390917379,
+      "timeSinceDistraction": 14382
+    },
+    {
+      "x": 123.199951171875,
+      "time": 1744390917386,
+      "timeSinceDistraction": 14389
+    },
+    {
+      "x": 123.199951171875,
+      "time": 1744390917393,
+      "timeSinceDistraction": 14396
+    },
+    {
+      "x": 122.199951171875,
+      "time": 1744390917400,
+      "timeSinceDistraction": 14403
+    },
+    {
+      "x": 121.199951171875,
+      "time": 1744390917407,
+      "timeSinceDistraction": 14410
+    },
+    {
+      "x": 120.199951171875,
+      "time": 1744390917421,
+      "timeSinceDistraction": 14424
+    },
+    {
+      "x": 119.199951171875,
+      "time": 1744390917476,
+      "timeSinceDistraction": 14479
+    },
+    {
+      "x": 118.199951171875,
+      "time": 1744390917532,
+      "timeSinceDistraction": 14535
+    },
+    {
+      "x": 118.199951171875,
+      "time": 1744390917587,
+      "timeSinceDistraction": 14590
+    },
+    {
+      "x": 118.199951171875,
+      "time": 1744390917657,
+      "timeSinceDistraction": 14660
+    },
+    {
+      "x": 119.199951171875,
+      "time": 1744390917698,
+      "timeSinceDistraction": 14701
+    },
+    {
+      "x": 119.199951171875,
+      "time": 1744390917740,
+      "timeSinceDistraction": 14743
+    },
+    {
+      "x": 120.199951171875,
+      "time": 1744390917754,
+      "timeSinceDistraction": 14757
+    },
+    {
+      "x": 121.199951171875,
+      "time": 1744390917816,
+      "timeSinceDistraction": 14819
+    },
+    {
+      "x": 122.199951171875,
+      "time": 1744390917824,
+      "timeSinceDistraction": 14827
+    },
+    {
+      "x": 123.199951171875,
+      "time": 1744390917900,
+      "timeSinceDistraction": 14903
+    },
+    {
+      "x": 124.199951171875,
+      "time": 1744390917921,
+      "timeSinceDistraction": 14924
+    },
+    {
+      "x": 125.199951171875,
+      "time": 1744390917969,
+      "timeSinceDistraction": 14972
+    },
+    {
+      "x": 126.199951171875,
+      "time": 1744390917990,
+      "timeSinceDistraction": 14993
+    }
+  ],
+  "idlePeriods": [
+    {
+      "duration": 3299,
+      "startTime": 1744390856051,
+      "endTime": 1744390859350,
+      "timeSinceLastDistraction": 1744390856051
+    },
+    {
+      "duration": 1271,
+      "startTime": 1744390865072,
+      "endTime": 1744390866343,
+      "timeSinceLastDistraction": 1744390865072
+    },
+    {
+      "duration": 1076,
+      "startTime": 1744390868121,
+      "endTime": 1744390869197,
+      "timeSinceLastDistraction": 1744390868121
+    },
+    {
+      "duration": 542,
+      "startTime": 1744390869593,
+      "endTime": 1744390870135,
+      "timeSinceLastDistraction": 1744390869593
+    },
+    {
+      "duration": 1368,
+      "startTime": 1744390870683,
+      "endTime": 1744390872051,
+      "timeSinceLastDistraction": 1744390870683
+    },
+    {
+      "duration": 632,
+      "startTime": 1744390873732,
+      "endTime": 1744390874364,
+      "timeSinceLastDistraction": 736
+    },
+    {
+      "duration": 743,
+      "startTime": 1744390874899,
+      "endTime": 1744390875642,
+      "timeSinceLastDistraction": 1903
+    },
+    {
+      "duration": 535,
+      "startTime": 1744390876204,
+      "endTime": 1744390876739,
+      "timeSinceLastDistraction": 3208
+    },
+    {
+      "duration": 597,
+      "startTime": 1744390877093,
+      "endTime": 1744390877690,
+      "timeSinceLastDistraction": 4097
+    },
+    {
+      "duration": 612,
+      "startTime": 1744390880551,
+      "endTime": 1744390881163,
+      "timeSinceLastDistraction": 7555
+    },
+    {
+      "duration": 535,
+      "startTime": 1744390891899,
+      "endTime": 1744390892434,
+      "timeSinceLastDistraction": 3902
+    },
+    {
+      "duration": 590,
+      "startTime": 1744390892885,
+      "endTime": 1744390893475,
+      "timeSinceLastDistraction": 4888
+    },
+    {
+      "duration": 729,
+      "startTime": 1744390896344,
+      "endTime": 1744390897073,
+      "timeSinceLastDistraction": 8347
+    },
+    {
+      "duration": 653,
+      "startTime": 1744390897163,
+      "endTime": 1744390897816,
+      "timeSinceLastDistraction": 9166
+    },
+    {
+      "duration": 611,
+      "startTime": 1744390897990,
+      "endTime": 1744390898601,
+      "timeSinceLastDistraction": 9993
+    },
+    {
+      "duration": 534,
+      "startTime": 1744390898601,
+      "endTime": 1744390899135,
+      "timeSinceLastDistraction": 10604
+    },
+    {
+      "duration": 813,
+      "startTime": 1744390903017,
+      "endTime": 1744390903830,
+      "timeSinceLastDistraction": 20
+    },
+    {
+      "duration": 660,
+      "startTime": 1744390906031,
+      "endTime": 1744390906691,
+      "timeSinceLastDistraction": 3034
+    },
+    {
+      "duration": 729,
+      "startTime": 1744390908434,
+      "endTime": 1744390909163,
+      "timeSinceLastDistraction": 5437
+    },
+    {
+      "duration": 563,
+      "startTime": 1744390911545,
+      "endTime": 1744390912108,
+      "timeSinceLastDistraction": 8548
+    },
+    {
+      "duration": 653,
+      "startTime": 1744390914684,
+      "endTime": 1744390915337,
+      "timeSinceLastDistraction": 11687
+    }
+  ],
+  "distractionEvents": [
+    1744390872996,
+    1744390887997,
+    1744390902997
+  ],
+  "timestamp": "2025-04-11 22:31:58",
+  "phq8_score": 16,
+  "extracted_features": {
+    "score": 8,
+    "accuracy": 77.5,
+    "avg_reaction_time": 1622,
+    "emotional_bias": -0.29,
+    "distraction_recovery": -0.6856,
+    "movement_variability": 54.9,
+    "distraction_response": {
+      "reaction_time_delta": 0,
+      "accuracy_delta": 0
+    },
+    "emotional_response_ratio": 1.0,
+    "emoji_collection_ratio": 35.7,
+    "stars_collected": 17,
+    "blocks_dodged": 169,
+    "blocks_hit": 4
+  },
+  "emotional_indicators": [
+    {
+      "emotion": "Emotional Stability",
+      "confidence": 0.8407514450867052,
+      "indicators": [
+        "Consistent performance",
+        "Balanced responses"
+      ]
+    }
+  ]
+}

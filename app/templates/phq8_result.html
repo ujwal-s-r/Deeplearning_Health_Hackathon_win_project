@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}PHQ-8 Results{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h2 class="h5 mb-0">PHQ-8 Assessment Results</h2>
+            </div>
+            
+            <div class="card-body p-4 text-center">
+                <div class="mb-4">
+                    <h3 class="h4 mb-3">Your PHQ-8 Score</h3>
+                    <div class="d-flex justify-content-center mb-3">
+                        <div class="score-display p-3 rounded-circle d-flex align-items-center justify-content-center"
+                             style="width: 120px; height: 120px; background-color: {% if score <= 4 %}#28a745{% elif score <= 9 %}#ffc107{% elif score <= 14 %}#fd7e14{% elif score <= 19 %}#dc3545{% else %}#dc3545{% endif %}; color: white;">
+                            <span class="display-4">{{ score }}</span>
+                        </div>
+                    </div>
+                    <p class="lead mb-0">Depression Severity: <strong>{{ severity }}</strong></p>
+                </div>
+                
+                <div class="alert {% if score <= 4 %}alert-success{% elif score <= 9 %}alert-warning{% else %}alert-danger{% endif %} mb-4">
+                    <p class="mb-0">{{ message }}</p>
+                </div>
+                
+                <div class="mb-4">
+                    <h4 class="h5 mb-3">PHQ-8 Score Interpretation</h4>
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Score</th>
+                                <th>Depression Severity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr {% if score <= 4 %}class="table-success"{% endif %}>
+                                <td>0-4</td>
+                                <td>None/minimal</td>
+                            </tr>
+                            <tr {% if 5 <= score <= 9 %}class="table-warning"{% endif %}>
+                                <td>5-9</td>
+                                <td>Mild</td>
+                            </tr>
+                            <tr {% if 10 <= score <= 14 %}class="table-warning"{% endif %}>
+                                <td>10-14</td>
+                                <td>Moderate</td>
+                            </tr>
+                            <tr {% if 15 <= score <= 19 %}class="table-danger"{% endif %}>
+                                <td>15-19</td>
+                                <td>Moderately severe</td>
+                            </tr>
+                            <tr {% if score >= 20 %}class="table-danger"{% endif %}>
+                                <td>20-24</td>
+                                <td>Severe</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="alert alert-warning mb-4">
+                    <strong>Note:</strong> This screening tool is not a diagnostic instrument. A high score suggests you may 
+                    benefit from a more thorough evaluation by a healthcare provider.
+                </div>
+                
+                <div class="d-grid gap-2 col-md-6 mx-auto">
+                    <a href="{{ url_for('main.game') }}" class="btn btn-primary btn-lg">Continue to Phase 2: Game</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .score-display {
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+</style>
+{% endblock %} 

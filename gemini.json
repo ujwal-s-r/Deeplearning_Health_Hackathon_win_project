@@ -1,0 +1,121 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "e5ba09a4-df6e-4e46-b218-acc42bfac5e7",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d13d0fad-4dc1-4aa2-994c-46df228d7260",
+      "name": "Webhook",
+      "webhookId": "e5ba09a4-df6e-4e46-b218-acc42bfac5e7"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=PHQ-8 score= {{ $json.body.phq8_score }}\ndominant emotion in vedio assessment={{ $json.body.dominant_emotion }}\nblink count in 1 min vedio={{ $json.body.blink_count }}\nemotion mix counts={{ JSON.stringify($json.body.emotion_counts) }}\nnumber of frames he is looking at positive side={{ $json.body.looking_right_count }}\nnumber of frames he looked at negetive side={{ $json.body.looking_left_count }}\navg pupil size={{ $json.body.avg_pupil_size }}\npupil dilation delta={{ $json.body.pupil_dilation_delta }}\ngamification data:{{ JSON.stringify($json.body.game_data) }}\n",
+        "options": {
+          "systemMessage": "you are a expert mental health analyst, i will send you some details about the patient, i want you to generate me a report based on the given information in a report way, structured with the metrics,\nstart and end like a professional medical report, dont add texts like ok i will start or anything else just pure report, dont include name, patient ID, or anything directly to report in professional medical format, add a heading at last of Final diagnosis is he depressed or not, his level of depression if there, is there any other symptoms, severity level, and next steps etc... main diagnosis points, dont just list the features as they are, list them like explaining the assessment for gamified assessment use this as context:Basic Performance\nAverage Reaction Time (1652ms)\nMeasures how quickly you respond to game objects\nHigher values (slower reactions) may indicate depression, fatigue, or cognitive processing issues\nLower values (faster reactions) might suggest anxiety or hypervigilance\nYour time (1652ms) is moderate but on the slower side, which could indicate mild mental fatigue\nAccuracy (66.3%)\nMeasures successful actions as a percentage of total objects\nLower accuracy may indicate difficulty maintaining focus or attention deficits\nHigher accuracy suggests good cognitive control\nYour score is moderate, suggesting reasonable but not optimal attention control\nEmotional Bias (-0.33 Negative)\nMeasures tendency toward positive or negative emotional responses\nNegative values suggest a bias toward perceiving or reacting to negative stimuli\nYour negative bias (-0.33) may indicate mild depression or anxiety tendencies\nDistraction Recovery (0.0027 Faster after distractions)\nMeasures performance changes following distractions\nFaster recovery suggests cognitive resilience and adaptability\nYour slight improvement after distractions indicates good recovery capability\nMovement Patterns\nHesitation Frequency (Infinity per second)\nMeasures pauses in movement, which can indicate decision uncertainty\nThe \"Infinity\" value is likely a calculation error, but high hesitation generally suggests anxiety or indecisiveness\nMovement Variability (89.20)\nMeasures how consistently you move the player\nHigher variability may indicate impulsivity or difficulty maintaining consistent motor control\nYour high value suggests significant movement inconsistency\nDistraction Response (+133ms reaction time, +33.7% accuracy)\nShows how distractions affect your performance\nYour pattern (slower but more accurate after distractions) suggests you become more cautious after disruptions\nEmotional Response\nEmotional Response Ratio (1.03 Prefers positive)\nCompares reactions to positive vs. negative emotional stimuli\nValues above 1.0 indicate faster/better responses to positive stimuli\nYour slight positive preference (1.03) suggests balanced emotional response\nEmoji Collection Ratio (40.0% positive)\nShows preference for collecting positive vs. negative emojis\nLower percentages may indicate negative emotional bias\nYour 40% positive collection rate aligns with your negative emotional bias\nThese metrics together create a profile that can help assess emotional state, cognitive function, and potential mental health indicators such as anxiety, depression, or attention difficulties."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        280,
+        -20
+      ],
+      "id": "e5b9e657-8c58-4c09-a87e-16dd8a5aaa06",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.0-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        160,
+        220
+      ],
+      "id": "c8bfd240-6975-47da-988a-113632d30519",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "ffcTYOswPHl7tit0",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.output }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        700,
+        0
+      ],
+      "id": "ef967726-576f-43bf-9c48-b832892a65a2",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "e0ee146d-4e10-4081-8185-235fc02bf2a8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "4e3b154747a861bec3b66e39baf8c9bd7c22ad1c79ced230a3c3ed8b7ccf1dc2"
+  },
+  "id": "m32md2rO51uuGOuK",
+  "tags": []
+}

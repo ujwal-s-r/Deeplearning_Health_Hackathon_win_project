@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow-sm">
+            <div class="card-body p-5 text-center">
+                <h2 class="card-title mb-4">Welcome to Your Mental Health Assessment</h2>
+                <p class="card-text lead mb-4">
+                    This assessment consists of three phases to help evaluate different aspects of your mental well-being:
+                </p>
+                
+                <div class="row mb-5">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-primary mb-3">
+                            <div class="card-header bg-primary text-white">Phase 1</div>
+                            <div class="card-body">
+                                <h5 class="card-title">PHQ-8 Questionnaire</h5>
+                                <p class="card-text">Answer 8 questions about your feelings and experiences over the past two weeks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-success mb-3">
+                            <div class="card-header bg-success text-white">Phase 2</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Interactive Game</h5>
+                                <p class="card-text">Participate in a short game that helps assess cognitive patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-info mb-3">
+                            <div class="card-header bg-info text-white">Phase 3</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Video Analysis</h5>
+                                <p class="card-text">Watch a short video while we analyze your facial expressions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-warning mb-4">
+                    <strong>Important:</strong> This assessment is not a diagnostic tool. It's designed to help you understand patterns in your mental well-being. Always consult with a qualified mental health professional for proper diagnosis and treatment.
+                </div>
+                
+                <div class="d-grid gap-2 col-md-6 mx-auto">
+                    <a href="{{ url_for('main.phq8_questionnaire') }}" class="btn btn-primary btn-lg">Begin Assessment</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

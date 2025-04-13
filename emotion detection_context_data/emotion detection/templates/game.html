@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        #gameCanvas {
+            border: 2px solid #333;
+            background-color: white;
+            touch-action: none; /* Prevents default touch actions on mobile */
+        }
+        #gameInfo {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #gameStats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            width: 400px;
+        }
+        #timer, #score {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px;
+        }
+        #instructions {
+            margin-bottom: 15px;
+            text-align: center;
+            width: 400px;
+        }
+        .emoji-info {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+            width: 400px;
+        }
+        .emoji-item {
+            text-align: center;
+        }
+        #startButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #startButton:hover {
+            background-color: #45a049;
+        }
+        #gameOver {
+            display: none;
+            position: absolute;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            max-width: 80%;
+            z-index: 10;
+        }
+        #resultDetails {
+            margin-top: 15px;
+            text-align: left;
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .metrics-section {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .metrics-section h4 {
+            margin: 5px 0;
+            color: #333;
+        }
+        #playAgainButton, #homeButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        #homeButton {
+            background-color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="instructions">
+            <h3>Attention and Reaction-Time Game</h3>
+            <p>Drag the blue dot to avoid red blocks and collect green stars and emojis. Watch out for sudden distractions!</p>
+        </div>
+        
+        <div class="emoji-info">
+            <div class="emoji-item">😊 = +2 points</div>
+            <div class="emoji-item">😐 = 0 points</div>
+            <div class="emoji-item">😢 = -1 points</div>
+            <div class="emoji-item">😠 = -2 points</div>
+        </div>
+        
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        
+        <div id="gameInfo">
+            <div id="gameStats">
+                <div id="timer">Time: 60s</div>
+                <div id="score">Score: 0</div>
+            </div>
+            <button id="startButton">Start Game</button>
+        </div>
+        
+        <div id="gameOver">
+            <h2>Game Over!</h2>
+            <p id="finalScore">Your score: 0</p>
+            <p id="starsCollected">Stars collected: 0</p>
+            
+            <div id="resultDetails">
+                <div class="metrics-section">
+                    <h4>Basic Performance:</h4>
+                    <ul>
+                        <li id="reactionTime">Average reaction time: 0ms</li>
+                        <li id="emotionalBias">Emotional bias: 0</li>
+                        <li id="distractionRecovery">Distraction recovery: 0</li>
+                    </ul>
+                </div>
+                
+                <div class="metrics-section">
+                    <h4>Movement Patterns:</h4>
+                    <ul>
+                        <li id="hesitationMetric">Hesitation frequency: 0 per second</li>
+                        <li id="movementVariability">Movement variability: 0</li>
+                    </ul>
+                </div>
+                
+                <div class="metrics-section">
+                    <h4>Emotional Response:</h4>
+                    <ul>
+                        <li id="emotionalResponseRatio">Emotional response ratio: 0</li>
+                    </ul>
+                </div>
+                
+                <div class="metrics-section">
+                    <h4>Potential Emotional Indicators:</h4>
+                    <ul id="emotionalIndicators">
+                        <!-- Will be populated with indicators from backend -->
+                    </ul>
+                </div>
+            </div>
+            
+            <div>
+                <button id="playAgainButton">Play Again</button>
+                <a href="/" id="homeButton">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/game.js"></script>
+</body>
+</html> 
